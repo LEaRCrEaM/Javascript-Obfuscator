@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Obfuscator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        textarea {
+            width: 80%;
+            height: 150px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #output {
+            background-color: #eee;
+            color: #333;
+        }
+
+        #submitButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #submitButton:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="input" placeholder="Enter your code here"></textarea>
+    <textarea id="output" readonly placeholder="Output will appear here"></textarea>
+    <button id="submitButton" onclick="obfuscate()">Submit</button>
+    <script src="main.js"></script>
+</body>
+</html>
